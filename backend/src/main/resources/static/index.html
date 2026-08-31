@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>基隆景點</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+          rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container mt-4">
+
+    <h1 class="text-center mb-4">基隆景點</h1>
+    <div class="d-flex flex-wrap justify-content-center gap-2">
+        <button class="btn btn-primary" onclick="loadSights('qidu')">七堵區</button>
+        <button class="btn btn-primary" onclick="loadSights('zhongzheng')">中正區</button>
+        <button class="btn btn-primary" onclick="loadSights('zhongshan')">中山區</button>
+        <button class="btn btn-primary" onclick="loadSights('renai')">仁愛區</button>
+        <button class="btn btn-primary" onclick="loadSights('xinyi')">信義區</button>
+        <button class="btn btn-primary" onclick="loadSights('anle')">安樂區</button>
+        <button class="btn btn-primary" onclick="loadSights('nuannuan')">暖暖區</button>
+    </div>
+    <div id="sight-list" class="row mt-4"></div>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
